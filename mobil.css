@@ -1,0 +1,18 @@
+#menu {
+  display: none !important;
+}
+
+#sec1 .col,
+.col input,
+.col button {
+  font-size: 10px !important;
+  width: 55px !important;
+}
+
+#sec1 .col span {
+  padding: 10px;
+}
+.carts {
+  width: 100% !important;
+  justify-content: center !important;
+}

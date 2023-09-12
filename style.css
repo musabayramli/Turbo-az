@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none;
+  
+}
+a{
+    color: #fff !important;
+}
+header {
+  background: #ca1016;
+  padding: 14px 0;
+  
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+  
+}
+header .container nav #menu {
+  margin-left: 30px;
+  
+}
+header .container nav,
+#menu {
+  display: flex;
+  align-items: center !important;
+  gap: 25px !important;
+  margin: 0 !important;
+  
+}
+nav > a {
+  text-transform: uppercase;
+  font-size: 1.2rem !important;
+ 
+}
+#menu * {
+  font-size: 1rem;
+}
+#menu #drop {
+  position: relative;
+  padding: 12px;
+}
+#menu #drop:hover #down {
+  display: block;
+}
+#down {
+    z-index: 4;
+  display: none;
+  position: absolute;
+  background-color: #f6f5f9;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 12px;
+  padding: 0 !important;
+}
+#down li:hover{
+    background: #ebeaea;
+    border-radius: 4px;
+}
+#down > * {
+  color: #000 !important;
+  padding: 10px !important;
+}
+.btns button{
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    background: #85c01f;
+    font-size: .95rem;
+    color: #fff !important;
+}
+.btns button:hover{
+    cursor: pointer;
+}
+.btns button > *{
+    margin: 0 4px;
+}
+
+/* Section 1 */
+
+#sec1{
+    background: #e4dcdc;
+    display: none;
+}
+.carts, #sec1 input{
+    color: #000 !important;
+}
+
+#sec1 span{
+    padding: 16px;
+    background: #cf0505;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}

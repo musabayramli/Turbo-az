@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Mobil Css -->
+    <link rel="stylesheet" media="(max-width:768px)" href="mobil.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+       .card img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .card  {
+            height: 350px !important;
+            
+        }
+    </style> -->
+    <style>
+        .card {
+            width: 16rem !important; 
+            min-height: 350px !important; 
+        }
+
+        .card img {
+            min-height: 190px !important;
+            object-fit: cover !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+       <div class="container">
+        <nav>
+            <a href=""><strong>Turbo.az</strong></a>
+            <ul id="menu">
+                <li><a href="">Butun Elanlar</a></li>
+                <li><a href="">Avtosalonlar</a></li>
+                <li><a href="">Moto</a></li>
+                <li id="drop"><a href="">Ehtiyyat hisseler ve aksesuarlar</a>
+                    <ul id="down">
+                        <li>Aksesuarlar</li>
+                        <li>Audio ve video texnika</li>
+                        <li>Avtokosmetika ve avtokimya</li>
+                        <li>Ehtiyat hisseler</li>
+                        <li>GPS naviqator</li>
+                        <li>Qeydiyyat nisanlari</li>
+                        <li>Siqnalizasiyaler</li>
+                        <li>Videoqeydiyyatcilar</li>
+                        <li>Sinler, diskler ve tekerler</li>
+                        <li>Diger</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="btns">
+            <button onclick="goster()">
+                <i class="fa-brands fa-creative-commons-sampling-plus"></i>
+                <span>Yeni Elan</span>
+            </button>
+        </div>
+       </div>
+    </header>
+
+    <section id="sec1">
+        <div class="container">
+            <div class="inps p-5">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Model" aria-label="Last name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Year" aria-label="Last name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Engine" aria-label="Last name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="img" aria-label="Last name">
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" onclick="yarat()">Creat</button>
+                    </div>
+                    <div class="col">
+                        <span onclick="gizle()">
+                            <i class="fa-solid fa-xmark" ></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="sch my-3 py-3 text-center">
+            <div class="mb-3">
+                <input type="text" class="inp form-control" id="formGroupExampleInput" placeholder="Axtar">
+              </div>
+              <div class="mb-3">
+                <button type="button" class="btn btn-primary" onclick="axtar()">Axtar</button>
+              </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="carts d-flex align-items-center justify-content-around flex-wrap gap-4 py-4">
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item al"></li>
+            <li class="list-group-item sil"></li>
+          </ul>
+    </div>
+
+
+
+    <!-- Bootstarp js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Main Js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
